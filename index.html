@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bibadubi</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>✨ Bibadubi ✨</h1>
+    <p>for the souls that need warmth and love</p>
+  </header>
+
+  <main>
+    <section class="messages">
+      <h2>🌷 Messages for You 🌷</h2>
+      <div id="messageList"></div>
+    </section>
+
+    <section class="remarks">
+      <h2>💌 Leave a Remark</h2>
+      <form id="remarkForm">
+        <input type="text" id="name" placeholder="Your name" required>
+        <textarea id="remark" placeholder="Write something kind..." required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <div id="remarkList"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>made with love by Bibadubi ♡</p>
+  </footer>
+
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js"></script>
+
+  <!-- Your Firebase + JS -->
+  <script src="script.js"></script>
+</body>
+  </html>
